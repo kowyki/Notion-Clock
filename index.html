@@ -7,7 +7,7 @@
 </head>
 <body>
   <a href="https://time.is/Saint_Petersburg" id="time_is_link" rel="nofollow"></a>
-  <span id="Saint_Petersburg_z71d"></span>
+  <span class="clock" id="Saint_Petersburg_z71d"></span>
   <script src="//widget.time.is/t.js"></script>
   <script>time_is_widget.init({Saint_Petersburg_z71d:{time_format:"hours:minutes"}})</script>
 </body>
@@ -24,11 +24,25 @@ body {
   padding: 0;
 }
 
-#Saint_Petersburg_z71d {
+.clock {
   font-size: 150px;
   text-align: center;
   font-family: 'Karla', sans-serif;
   color: #979a9b;
   font-weight: bold;
+}
+
+/* For screens with width less than or equal to 768px */
+@media screen and (max-width: 768px) {
+  .clock {
+    font-size: 100px;
+  }
+}
+
+/* For screens with width less than or equal to 576px */
+@media screen and (max-width: 576px) {
+  .clock {
+    font-size: 80px;
+  }
 }
 </style>
